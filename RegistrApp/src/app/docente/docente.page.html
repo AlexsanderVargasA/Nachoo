@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Vista Docente</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h1>Bienvenido</h1><br><br>
+
+  <div>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Mis Clases</ion-card-title>
+      </ion-card-header>
+      <ion-list>
+        <ion-item>
+          <h6>Clase 1</h6>
+          <ion-button slot="end">Iniciar</ion-button>
+        </ion-item>
+        <ion-item>
+          <h6>Clase 2</h6>
+          <ion-button slot="end">Iniciar</ion-button>  
+        </ion-item>
+        <ion-item>
+          <h6>Clase 3</h6>
+          <ion-button slot="end">Iniciar</ion-button>
+        </ion-item>
+      </ion-list>
+      <ion-card-content>
+        Todas las clases se mostrarán aqui.
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="">
+      <ion-icon name="home"></ion-icon>Home
+    </ion-tab-button>
+    <ion-tab-button (click)="perfil()">
+      <ion-icon name="card"></ion-icon>Perfil
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

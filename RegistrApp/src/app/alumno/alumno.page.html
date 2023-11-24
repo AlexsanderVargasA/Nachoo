@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>alumno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h1>Bienvenido {{ user.usuario }}</h1><br><br>
+  <div>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Mi Asistencia</ion-card-title>
+      </ion-card-header>
+      <ion-list>
+        <ion-item>
+          <h6>Ingles</h6>
+          <h6 slot="end">87%</h6>
+        </ion-item>
+        <ion-item>
+          <h6>Programación</h6>
+          <h6 slot="end">90%</h6>
+        </ion-item>
+        <ion-item>
+          <h6>Matematicas</h6>
+          <h6 slot="end">77%</h6>
+        </ion-item>
+      </ion-list>   
+    </ion-card>
+  </div> 
+</ion-content> 
+<ion-tabs>
+  <ion-button expand="block" shape="round" (click)="scan()">Registrar Asistencia</ion-button>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="home"></ion-icon>Home
+    </ion-tab-button>
+    <ion-tab-button (click)="perfil()">
+      <ion-icon name="card"></ion-icon>Perfil
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
